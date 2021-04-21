@@ -627,22 +627,6 @@
 	<script src="assets/libs/bootstrap/js/bootstrap.min.js"></script>
 	<script src="assets/js/main.js"></script>
 	<script>
-		$('.btnNext').click(function() {
-			$('.modal_first_cart .active').parent().next('li').find('a').trigger('click');
-		});
-		$('.btnPrevious').click(function() {
-			$('.modal_first_cart .active').parent().prev('li').find('a').trigger('click');
-		});
-	</script>
-	<script>
-		$('.next-btn-about').click(function() {
-			$('.about_product_modal_open .active').parent().next('li').find('a').trigger('click');
-		});
-		$('.back-btn-about').click(function() {
-			$('.about_product_modal_open .active').parent().prev('li').find('a').trigger('click');
-		});
-	</script>
-	<script>
 		$(document).ready(function() {
 
 			function redrawCart() {
@@ -701,10 +685,10 @@
 	        		<hr>
 				`
 
-				const currentCartCount = JSON.parse(localStorage.getItem('cart')).length
+				const currentCart = JSON.parse(localStorage.getItem('cart'))
 
-				if(currentCartCount) {
-					for(let i = 0; i < currentCartCount; i++) {
+				if(currentCart && currentCart.length) {
+					for(let i = 0; i < currentCart.length; i++) {
 						html += item
 					}
 				}
@@ -715,7 +699,7 @@
 			function addToCard(item) {
 				const currentCart = JSON.parse(localStorage.getItem('cart'))
 
-				if(currentCart.length) {
+				if(currentCart && currentCart.length) {
 					localStorage.setItem('cart', 
 						JSON.stringify([...currentCart, item])
 					)
@@ -744,7 +728,22 @@
 			$(document).on('click', '.delete-btn-cart', function () {
 				removeFromCard()
 			})
-			$('.price-box button').on('click', function() {
+
+
+			$(document).on('click', '.btnNext', function() {
+				$('.modal_first_cart .active').parent().next('li').find('a').trigger('click');
+			});
+			$(document).on('click', '.btnPrevious', function() {
+				$('.modal_first_cart .active').parent().prev('li').find('a').trigger('click');
+			});
+			$(document).on('click', '.next-btn-about', function() {
+				$('.about_product_modal_open .active').parent().next('li').find('a').trigger('click');
+			});
+			$(document).on('click', '.back-btn-about', function() {
+				$('.about_product_modal_open .active').parent().prev('li').find('a').trigger('click');
+			});
+
+			$('.price-box button, .cart-btn').on('click', function() {
 				const item = { 
 					id: Date.now(),
 					title: 'Лосьон-Спрей Доктора Плетнева Для Кожи И Волос Ночной С Ароматом Ванили', 
@@ -757,7 +756,7 @@
 				addToCard(item)
 			})
 
-			$('.minus').click(function () {
+			$(document).on('click', '.minus', function () {
 				var $input = $(this).parent().find('input');
 				var count = parseInt($input.val()) - 1;
 
@@ -767,7 +766,7 @@
 				return false;
 			});
 
-			$('.plus').click(function () {
+			$(document).on('click', '.plus', function () {
 				var $input = $(this).parent().find('input');
 
 				$input.val(parseInt($input.val()) + 1);
