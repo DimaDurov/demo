@@ -194,7 +194,11 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 	04 - HEADER START
 **************************************/
 .header{
+	width: 100%;
+	position: sticky;
+	top: 0;
 	background-color: #fff;
+	z-index: 1;
 }
 .navbar{
 	padding: 7px 0px 7px 0px;

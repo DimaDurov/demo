@@ -498,7 +498,7 @@
 							<button type="button" class="btn close-btn-modal" data-dismiss="modal">продолжить покупки</button>
 						</div>	
 						<div class="footer-box-modal-text">
-							<p class="price-count-p">2000 руб.</p>
+							<p class="price-count-p"></p>
 							<button type="button" class="btn btnNext">оформить заказ</button>
 						</div>
 					</div>
@@ -694,6 +694,7 @@
 				}
 
 				block.html(html)
+				$('.price-count-p').html(`${currentCart.length*1000} руб.`)
 			}
 
 			function addToCard(item) {
@@ -713,11 +714,9 @@
 				const currentCart = JSON.parse(localStorage.getItem('cart'))
 
 				if(currentCart) {
-					// для продакшна:
-					// const newCart = currentCart.filter(i => i.id !== id)
-					// localStorage.setItem('cart', JSON.stringify(newCart))
-
-					currentCart.length === 1 ?  localStorage.setItem('cart', JSON.stringify([])) : localStorage.setItem('cart', JSON.stringify(currentCart.splice(-1,1)))
+					currentCart.length === 1 
+						? localStorage.setItem('cart', JSON.stringify([])) 
+						: localStorage.setItem('cart', JSON.stringify(currentCart.splice(-1,1)))
 					console.log(currentCart)
 				}
 
