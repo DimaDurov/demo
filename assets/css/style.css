@@ -198,7 +198,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 	position: sticky;
 	top: 0;
 	background-color: #fff;
-	z-index: 1;
+	z-index: 2;
 }
 .navbar{
 	padding: 7px 0px 7px 0px;
@@ -272,7 +272,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 **************************************/
 .footer{
 	background-color: #d69e8d;
-	padding: 55px 0px 65px 0px;
+	padding: 40px 0px 40px 0px;
 }
 .footer .navbar-brand{
 	margin-right: 0;
@@ -340,7 +340,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 	06 - ABOUT-AUTHOR START
 **************************************/
 .about-author{
-	background: url(../img/banners/banner-2.png);
+	background: url(../img/banners/banner-2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -388,7 +388,7 @@ p{
 **************************************/
 .promo{
 	text-align: center;
-	background: url(../img/banners/banner-1.png);
+	background: url(../img/banners/banner-1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
@@ -466,7 +466,7 @@ p{
 	text-align: center;
 }
 .text-line-box h3{
-	font-size: 26px;
+	font-size: 24px;
 	line-height: 30px;
 	font-weight: 400;
 	text-transform: uppercase;
@@ -537,7 +537,7 @@ p{
 	text-align: center;
 }
 .card-title{
-	font-size: 26px;
+	font-size: 24px;
 	line-height: 35px;
 	font-weight: 400;
 	text-transform: uppercase;
@@ -550,6 +550,13 @@ p{
 	text-transform: uppercase;
 	color: #442b12;
 	margin-bottom: 20px;
+}
+.card-number{
+	font-size: 16px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #442b12;
+	margin-bottom: 10px;
 }
 /**************************************
 	09 - NEW-PRODUCTS END
@@ -585,7 +592,7 @@ p{
 .subscribe{
 	padding: 60px 0 100px 0;
 	text-align: center;
-	background: url(../img/banners/banner-3.png);
+	background: url(../img/banners/banner-3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
