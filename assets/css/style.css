@@ -1594,6 +1594,32 @@ hr{
 .box-img-info img{
 	width: 112px;
 }
+.alert-content{
+	background: #d69e8d;
+}
+.alert-content p{
+	color: #fff;
+	font-size: 20px;
+}
+.alert-modal button{
+	background: #fff;
+	color: #d69e8d;
+	width: 208px;
+}
+.alert-modal{
+	display: flex;
+	justify-content: center;
+}
+.modal-alert .alert-modal{
+	padding: 30px;
+}
+.modal-alert .modal-body{
+	padding: 20px 20px 0px 20px;
+}
+.alert-modal button:hover{
+	background: #bdce81;
+	color: #fff;
+}
 /**************************************
 	17 -  MODAL PRODUCT END
 **************************************/
