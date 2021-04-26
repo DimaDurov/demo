@@ -12,16 +12,22 @@
 	
 	<header class="header">
 		<div class="container-custom-header">
-			<nav class="navbar navbar-expand-xl navbar-light">
+			<nav class="navbar navbar-expand-xl navbar-dark">
 				<a class="navbar-brand noselect" href="index.html">
 	    			<img src="assets/img/logo/logo.png" class="d-inline-block align-top" alt="logo-header">
 	    			<span class="logo-word-one">семейная<br><span class="logo-word-two">привлекательность</span></span>
 	  			</a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Переключатель навигации">
-			    	<span class="navbar-toggler-icon"></span>
-			  	</button>
+	  			<div class="header-buttons-box">
+	  				<button type="button" class="cart-btn-header cart-adaptive" data-toggle="modal" data-target="#exampleModal">
+						<img src="assets/img/icons/cart-icon.png" alt="cart">
+					</button>
+	  				<button type="button" class="btn lang-btn lang-adaptive">eng</button>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Переключатель навигации">
+			    		<span class="navbar-toggler-icon"></span>
+			  		</button>
+	  			</div>
 				<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-					<ul class="navbar-nav mr-auto mt-2 mt-lg-0 noselect">
+					<ul class="navbar-nav mr-auto noselect">
 						<li class="nav-item">
 							<a class="nav-link" href="index.html">главная</a>
 						</li>
@@ -35,7 +41,7 @@
 					<button type="button" class="cart-btn-header" data-toggle="modal" data-target="#exampleModal">
 						<img src="assets/img/icons/cart-icon.png" alt="cart">
 					</button>
-					<form class="form-inline my-2 my-lg-0 search">
+					<form class="form-inline search noselect">
 						<input class="form-control" type="search" placeholder="Я ИЩУ...">
 						<button class="btn search-btn" type="submit">найти</button>
 					</form>
@@ -50,28 +56,28 @@
 		<section class="catalog-line">
 			<div class="container-custom-header">
 				<div class="row">
-					<div class="col-3">
+					<div class="col-lg-3 col-md-12 col-2">
 					    <div class="nav flex-column nav-pills noselect" id="v-pills-tab" role="tablist" aria-orientation="vertical">
 					   	  <span class="nav-link header-span-nav">линейки продукции</span>
 					      <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">омолаживающая линия</a>
-					      <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">вторая омолаживающая<br>линия</a>
-					      <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">элитная<br>омолаживающая линия</a>
-					      <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">супер элитная<br>омолаживающая линия</a>
+					      <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">вторая омолаживающая линия</a>
+					      <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">элитная омолаживающая линия</a>
+					      <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">супер элитная омолаживающая линия</a>
 					      <a class="nav-link" id="v-pills-drinks-tab" data-toggle="pill" href="#v-pills-drinks" role="tab" aria-controls="v-pills-drinks" aria-selected="false">напитки</a>
-					      <a class="nav-link" id="v-pills-books-tab" data-toggle="pill" href="#v-pills-books" role="tab" aria-controls="v-pills-books" aria-selected="false">книги</a>
+					      <a class="nav-link mb-20-books" id="v-pills-books-tab" data-toggle="pill" href="#v-pills-books" role="tab" aria-controls="v-pills-books" aria-selected="false">книги</a>
 					    </div>
 				  	</div>
-					<div class="col-9">
+					<div class="col-lg-9 col-md-12 col-2">
 					    <div class="tab-content" id="v-pills-tabContent">
 						    <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
 						    	<div class="product-line-box product-line-bg">
 									<div class="row justify-content-end align-items-center">
-										<div class="col-lg-6">
+										<div class="col-xl-6 col-lg-5">
 											<div class="text-center line-img noselect">
 												<img src="assets/img/catalog/book-2.png" alt="book-2">
 											</div>
 										</div>
-										<div class="col-lg-5">
+										<div class="col-xl-5 col-lg-7">
 											<div class="text-line-box noselect">
 												<h3>омолаживающая линия доктора плетнёва</h3>
 												<p>Состоит из натуральных оздоровительных лосьонов-спреев, часть из которых с очень нежным тонким ароматом. Ароматы натуральных эфирных масел, которые добавлены в лосьоны-спреи, при использовании могут терять свою интенсивность. Ароматы не входят в состав действующего вещества, т.е. не обладают прочными связями с активной молекулой, поэтому они удерживаются в лосьоне естественным образом.</p>
@@ -83,12 +89,12 @@
 						    <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
 						    	<div class="product-line-box product-line-bg">
 									<div class="row justify-content-end align-items-center">
-										<div class="col-lg-6">
+										<div class="col-xl-6 col-lg-5">
 											<div class="text-center line-img noselect">
 												<img src="assets/img/catalog/book-2.png" alt="book-2">
 											</div>
 										</div>
-										<div class="col-lg-5">
+										<div class="col-xl-5 col-lg-7">
 											<div class="text-line-box noselect">
 												<h3>вторая омолаживающая линия</h3>
 												<p>Состоит из натуральных оздоровительных лосьонов-спреев, часть из которых с очень нежным тонким ароматом. Ароматы натуральных эфирных масел, которые добавлены в лосьоны-спреи, при использовании могут терять свою интенсивность. Ароматы не входят в состав действующего вещества, т.е. не обладают прочными связями с активной молекулой, поэтому они удерживаются в лосьоне естественным образом.</p>
@@ -100,12 +106,12 @@
 						    <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
 						    	<div class="product-line-box product-line-bg">
 									<div class="row justify-content-end align-items-center">
-										<div class="col-lg-6">
+										<div class="col-xl-6 col-lg-5">
 											<div class="text-center line-img noselect">
 												<img src="assets/img/catalog/book-2.png" alt="book-2">
 											</div>
 										</div>
-										<div class="col-lg-5">
+										<div class="col-xl-5 col-lg-7">
 											<div class="text-line-box noselect">
 												<h3>элитная омолаживающая линия</h3>
 												<p>Состоит из натуральных оздоровительных лосьонов-спреев, часть из которых с очень нежным тонким ароматом. Ароматы натуральных эфирных масел, которые добавлены в лосьоны-спреи, при использовании могут терять свою интенсивность. Ароматы не входят в состав действующего вещества, т.е. не обладают прочными связями с активной молекулой, поэтому они удерживаются в лосьоне естественным образом.</p>
@@ -117,12 +123,12 @@
 						    <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
 						    	<div class="product-line-box product-line-bg">
 									<div class="row justify-content-end align-items-center">
-										<div class="col-lg-6">
+										<div class="col-xl-6 col-lg-5">
 											<div class="text-center line-img noselect">
 												<img src="assets/img/catalog/book-2.png" alt="book-2">
 											</div>
 										</div>
-										<div class="col-lg-5">
+										<div class="col-xl-5 col-lg-7">
 											<div class="text-line-box noselect">
 												<h3>супер элитная омолаживающая линия</h3>
 												<p>Состоит из натуральных оздоровительных лосьонов-спреев, часть из которых с очень нежным тонким ароматом. Ароматы натуральных эфирных масел, которые добавлены в лосьоны-спреи, при использовании могут терять свою интенсивность. Ароматы не входят в состав действующего вещества, т.е. не обладают прочными связями с активной молекулой, поэтому они удерживаются в лосьоне естественным образом.</p>
@@ -134,12 +140,12 @@
 						    <div class="tab-pane fade" id="v-pills-drinks" role="tabpanel" aria-labelledby="v-pills-drinks-tab">
 						    	<div class="product-line-box product-line-bg">
 									<div class="row justify-content-end align-items-center">
-										<div class="col-lg-6">
+										<div class="col-xl-6 col-lg-5">
 											<div class="text-center line-img noselect">
 												<img src="assets/img/catalog/book-2.png" alt="book-2">
 											</div>
 										</div>
-										<div class="col-lg-5">
+										<div class="col-xl-5 col-lg-7">
 											<div class="text-line-box noselect">
 												<h3>напитки</h3>
 												<p>Состоит из натуральных оздоровительных лосьонов-спреев, часть из которых с очень нежным тонким ароматом. Ароматы натуральных эфирных масел, которые добавлены в лосьоны-спреи, при использовании могут терять свою интенсивность. Ароматы не входят в состав действующего вещества, т.е. не обладают прочными связями с активной молекулой, поэтому они удерживаются в лосьоне естественным образом.</p>
@@ -151,12 +157,12 @@
 						    <div class="tab-pane fade" id="v-pills-books" role="tabpanel" aria-labelledby="v-pills-books-tab">
 						    	<div class="product-line-box product-line-bg">
 									<div class="row justify-content-end align-items-center">
-										<div class="col-lg-6">
+										<div class="col-xl-6 col-lg-5">
 											<div class="text-center line-img noselect">
 												<img src="assets/img/catalog/book-2.png" alt="book-2">
 											</div>
 										</div>
-										<div class="col-lg-5">
+										<div class="col-xl-5 col-lg-7">
 											<div class="text-line-box noselect">
 												<h3>книги</h3>
 												<p>Состоит из натуральных оздоровительных лосьонов-спреев, часть из которых с очень нежным тонким ароматом. Ароматы натуральных эфирных масел, которые добавлены в лосьоны-спреи, при использовании могут терять свою интенсивность. Ароматы не входят в состав действующего вещества, т.е. не обладают прочными связями с активной молекулой, поэтому они удерживаются в лосьоне естественным образом.</p>
@@ -177,7 +183,7 @@
 					<h2>МЕХАНИЗМ ДЕЙСТВИЯ ЛОСЬОНОВ-СПРЕЕВ</h2>
 				</div>
 				<div class="row justify-content-center">
-					<div class="col-lg-10">
+					<div class="col-lg-10 col-md-12 col-2">
 						<div class="advantages-box mb-20 noselect">
 							<div class="img-box-adv">
 								<img src="assets/img/icons/icon-1.png" alt="icon-1">
@@ -185,7 +191,7 @@
 							<p>Лосьоны-спреи, нанесенные на кожу и/или волосы, улучшают микроциркуляторное сосудистое русло, устраняют воспалительные процессы кожи, оказывают лифтинговые свойства.</p>
 						</div>
 					</div>
-					<div class="col-lg-10">
+					<div class="col-lg-10 col-md-12 col-2">
 						<div class="advantages-box mb-20 noselect">
 							<div class="img-box-adv">
 								<img src="assets/img/icons/icon-2.png" alt="icon-1">
@@ -193,7 +199,7 @@
 							<p>В результате проведения процедуры наблюдается положительная динамика: восстановление контура лица, целостности и тургора кожи, защитных функций и естественного цвета кожи. Лосьоны-спреи тонизируют и освежают кожу, придают ей бархатистость и привлекательность, оказывают коррекцию мелких и мимических морщин, увлажняют кожу, устраняют гнойчики, угревую сыпь, пигментированные участки кожи, зуд и т.д.</p>
 						</div>
 					</div>
-					<div class="col-lg-10">
+					<div class="col-lg-10 col-md-12 col-2">
 						<div class="advantages-box mb-20 noselect">
 							<div class="img-box-adv">
 								<img src="assets/img/icons/icon-3.png" alt="icon-1">
@@ -201,7 +207,7 @@
 							<p>Лосьоны-спреи восстанавливают функции сальных желез и структуру волос, устраняют перхоть, укрепляют волосяные фолликулы, предотвращают их выпадение, ускоряют их рост, придают волосам эластичность, шелковистость и блеск, предупреждают сечение кончиков волос. Придают прическе форму, увеличивают объем волос. Защищают волосы от вредного взаимодействия экзогенных факторов.</p>
 						</div>
 					</div>
-					<div class="col-lg-10">
+					<div class="col-lg-10 col-md-12 col-2">
 						<div class="advantages-box noselect">
 							<div class="img-box-adv">
 								<img src="assets/img/icons/icon-4.png" alt="icon-1">
@@ -218,8 +224,8 @@
 				<div class="title-section noselect">
 					<h2>ПРЕИМУЩЕСТВА ПРИМЕНЕНИЯ ЛОСЬОНОВ-СПРЕЕВ</h2>
 				</div>
-				<div class="justify-content-between d-flex">
-					<div class="features-container">
+				<div class="advantages-new d-flex">
+					<div class="features-container f-cont-one">
 						<div class="features-box mb-15 noselect">
 							<img src="assets/img/icons/atom-icon.png" alt="atom-icon">
 							<div class="box-text-features">
@@ -279,7 +285,7 @@
 						<div class="features-box noselect">
 							<img src="assets/img/icons/atom-icon.png" alt="atom-icon">
 							<div class="box-text-features">
-								<span>женщины и мужчины выглядят моложе на много лет</span>
+								<span>Внешний вид существенно моложе реального возраста</span>
 							</div>
 						</div>
 					</div>
@@ -293,10 +299,11 @@
 					<h2>продукты серии</h2>
 				</div>
 				<div class="row justify-content-center align-items-start">
-					<div class="col-lg-4">
+
+					<div class="col-lg-4 col-md-6 col-2">
 						<div class="card mb-60">
 							<a data-toggle="modal" href="#exampleModal2" role="button">
-								<img src="assets/img/products/product-1.png" class="card-img-top" alt="product-3">
+								<img src="assets/img/new-products/ол л-сп ваниль 500мл.png" class="card-img-top" alt="product-3">
 							</a>
 							<div class="card-body noselect">
 								<h5 class="card-title">Напиток «Вторник»</h5>
@@ -309,61 +316,14 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-4">
+
+					<div class="col-lg-4 col-md-6 col-2">
 						<div class="card mb-60">
 							<a data-toggle="modal" href="#exampleModal2" role="button">
-								<img src="assets/img/products/product-3.png" class="card-img-top" alt="product-3">
+								<img src="assets/img/new-products/ол л-сп ваниль спрей 50мл.png" class="card-img-top" alt="product-3">
 							</a>
 							<div class="card-body noselect">
-								<h5 class="card-title">Лосьон-спрей</h5>
-								<p class="card-number">Артикул: 00000</p>
-								<p class="card-text">C ароматом жасмина</p>
-							</div>
-							<div class="price-box noselect">
-								<span>ЦЕНА</span>
-								<button type="button" class="btn cart-btn">в корзину</button>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4">
-						<div class="card mb-60">
-							<a data-toggle="modal" href="#exampleModal2" role="button">
-								<img src="assets/img/products/product-2.png" class="card-img-top" alt="product-3">
-							</a>
-							<div class="card-body noselect">
-								<h5 class="card-title">лосьон-спрей</h5>
-								<p class="card-number">Артикул: 00000</p>
-								<p class="card-text">с ароматом розмарина</p>
-							</div>
-							<div class="price-box noselect">
-								<span>ЦЕНА</span>
-								<button type="button" class="btn cart-btn">в корзину</button>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4">
-						<div class="card mb-60">
-							<a data-toggle="modal" href="#exampleModal2" role="button">
-								<img src="assets/img/products/product-3.png" class="card-img-top" alt="product-3">
-							</a>
-							<div class="card-body noselect">
-								<h5 class="card-title">лосьон-спрей</h5>
-								<p class="card-number">Артикул: 00000</p>
-								<p class="card-text">с ароматом найоли</p>
-							</div>
-							<div class="price-box noselect">
-								<span>ЦЕНА</span>
-								<button type="button" class="btn cart-btn">в корзину</button>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4">
-						<div class="card mb-60">
-							<a data-toggle="modal" href="#exampleModal2" role="button">
-								<img src="assets/img/products/product-3.png" class="card-img-top" alt="product-3">
-							</a>
-							<div class="card-body noselect">
-								<h5 class="card-title">название товара</h5>
+								<h5 class="card-title">Напиток «Вторник»</h5>
 								<p class="card-number">Артикул: 00000</p>
 								<p class="card-text">краткое описание</p>
 							</div>
@@ -373,13 +333,14 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-4">
+
+					<div class="col-lg-4 col-md-6 col-2">
 						<div class="card mb-60">
 							<a data-toggle="modal" href="#exampleModal2" role="button">
-								<img src="assets/img/products/product-3.png" class="card-img-top" alt="product-3">
+								<img src="assets/img/new-products/ол л-сп вербена 500мл.png" class="card-img-top" alt="product-3">
 							</a>
 							<div class="card-body noselect">
-								<h5 class="card-title">название товара</h5>
+								<h5 class="card-title">Напиток «Вторник»</h5>
 								<p class="card-number">Артикул: 00000</p>
 								<p class="card-text">краткое описание</p>
 							</div>
@@ -389,13 +350,14 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-4">
-						<div class="card">
+
+					<div class="col-lg-4 col-md-6 col-2">
+						<div class="card mb-60">
 							<a data-toggle="modal" href="#exampleModal2" role="button">
-								<img src="assets/img/products/product-3.png" class="card-img-top" alt="product-3">
+								<img src="assets/img/new-products/ол л-сп вербена 50мл.png" class="card-img-top" alt="product-3">
 							</a>
 							<div class="card-body noselect">
-								<h5 class="card-title">название товара</h5>
+								<h5 class="card-title">Напиток «Вторник»</h5>
 								<p class="card-number">Артикул: 00000</p>
 								<p class="card-text">краткое описание</p>
 							</div>
@@ -405,13 +367,14 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-4">
-						<div class="card">
+
+					<div class="col-lg-4 col-md-6 col-2">
+						<div class="card mb-60">
 							<a data-toggle="modal" href="#exampleModal2" role="button">
-								<img src="assets/img/products/product-3.png" class="card-img-top" alt="product-3">
+								<img src="assets/img/new-products/ол л-сп для кожи спрей 50мл.png" class="card-img-top" alt="product-3">
 							</a>
 							<div class="card-body noselect">
-								<h5 class="card-title">название товара</h5>
+								<h5 class="card-title">Напиток «Вторник»</h5>
 								<p class="card-number">Артикул: 00000</p>
 								<p class="card-text">краткое описание</p>
 							</div>
@@ -421,13 +384,218 @@
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-4">
-						<div class="card">
+
+					<div class="col-lg-4 col-md-6 col-2">
+						<div class="card mb-60">
 							<a data-toggle="modal" href="#exampleModal2" role="button">
-								<img src="assets/img/products/product-3.png" class="card-img-top" alt="product-3">
+								<img src="assets/img/new-products/ол л-сп жасмин 500мл.png" class="card-img-top" alt="product-3">
 							</a>
 							<div class="card-body noselect">
-								<h5 class="card-title">название товара</h5>
+								<h5 class="card-title">Напиток «Вторник»</h5>
+								<p class="card-number">Артикул: 00000</p>
+								<p class="card-text">краткое описание</p>
+							</div>
+							<div class="price-box noselect">
+								<span>ЦЕНА</span>
+								<button type="button" class="btn cart-btn">в корзину</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-6 col-2">
+						<div class="card mb-60">
+							<a data-toggle="modal" href="#exampleModal2" role="button">
+								<img src="assets/img/new-products/ол л-сп жасмин 50мл.png" class="card-img-top" alt="product-3">
+							</a>
+							<div class="card-body noselect">
+								<h5 class="card-title">Напиток «Вторник»</h5>
+								<p class="card-number">Артикул: 00000</p>
+								<p class="card-text">краткое описание</p>
+							</div>
+							<div class="price-box noselect">
+								<span>ЦЕНА</span>
+								<button type="button" class="btn cart-btn">в корзину</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-6 col-2">
+						<div class="card mb-60">
+							<a data-toggle="modal" href="#exampleModal2" role="button">
+								<img src="assets/img/new-products/ол л-сп кипарис спрей 50мл.png" class="card-img-top" alt="product-3">
+							</a>
+							<div class="card-body noselect">
+								<h5 class="card-title">Напиток «Вторник»</h5>
+								<p class="card-number">Артикул: 00000</p>
+								<p class="card-text">краткое описание</p>
+							</div>
+							<div class="price-box noselect">
+								<span>ЦЕНА</span>
+								<button type="button" class="btn cart-btn">в корзину</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-6 col-2">
+						<div class="card mb-60">
+							<a data-toggle="modal" href="#exampleModal2" role="button">
+								<img src="assets/img/new-products/ол л-сп ладан 500мл.png" class="card-img-top" alt="product-3">
+							</a>
+							<div class="card-body noselect">
+								<h5 class="card-title">Напиток «Вторник»</h5>
+								<p class="card-number">Артикул: 00000</p>
+								<p class="card-text">краткое описание</p>
+							</div>
+							<div class="price-box noselect">
+								<span>ЦЕНА</span>
+								<button type="button" class="btn cart-btn">в корзину</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-6 col-2">
+						<div class="card mb-60">
+							<a data-toggle="modal" href="#exampleModal2" role="button">
+								<img src="assets/img/new-products/ол л-сп ладан спрей 50мл.png" class="card-img-top" alt="product-3">
+							</a>
+							<div class="card-body noselect">
+								<h5 class="card-title">Напиток «Вторник»</h5>
+								<p class="card-number">Артикул: 00000</p>
+								<p class="card-text">краткое описание</p>
+							</div>
+							<div class="price-box noselect">
+								<span>ЦЕНА</span>
+								<button type="button" class="btn cart-btn">в корзину</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-6 col-2">
+						<div class="card mb-60">
+							<a data-toggle="modal" href="#exampleModal2" role="button">
+								<img src="assets/img/new-products/ол л-сп мирра 500мл.png" class="card-img-top" alt="product-3">
+							</a>
+							<div class="card-body noselect">
+								<h5 class="card-title">Напиток «Вторник»</h5>
+								<p class="card-number">Артикул: 00000</p>
+								<p class="card-text">краткое описание</p>
+							</div>
+							<div class="price-box noselect">
+								<span>ЦЕНА</span>
+								<button type="button" class="btn cart-btn">в корзину</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-6 col-2">
+						<div class="card mb-60">
+							<a data-toggle="modal" href="#exampleModal2" role="button">
+								<img src="assets/img/new-products/ол л-сп мирра спрей 50мл.png" class="card-img-top" alt="product-3">
+							</a>
+							<div class="card-body noselect">
+								<h5 class="card-title">Напиток «Вторник»</h5>
+								<p class="card-number">Артикул: 00000</p>
+								<p class="card-text">краткое описание</p>
+							</div>
+							<div class="price-box noselect">
+								<span>ЦЕНА</span>
+								<button type="button" class="btn cart-btn">в корзину</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-6 col-2">
+						<div class="card mb-60">
+							<a data-toggle="modal" href="#exampleModal2" role="button">
+								<img src="assets/img/new-products/ол л-сп роза 500мл.png" class="card-img-top" alt="product-3">
+							</a>
+							<div class="card-body noselect">
+								<h5 class="card-title">Напиток «Вторник»</h5>
+								<p class="card-number">Артикул: 00000</p>
+								<p class="card-text">краткое описание</p>
+							</div>
+							<div class="price-box noselect">
+								<span>ЦЕНА</span>
+								<button type="button" class="btn cart-btn">в корзину</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-6 col-2">
+						<div class="card mb-60">
+							<a data-toggle="modal" href="#exampleModal2" role="button">
+								<img src="assets/img/new-products/ол л-сп роза спрей 50мл.png" class="card-img-top" alt="product-3">
+							</a>
+							<div class="card-body noselect">
+								<h5 class="card-title">Напиток «Вторник»</h5>
+								<p class="card-number">Артикул: 00000</p>
+								<p class="card-text">краткое описание</p>
+							</div>
+							<div class="price-box noselect">
+								<span>ЦЕНА</span>
+								<button type="button" class="btn cart-btn">в корзину</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-6 col-2">
+						<div class="card mb-60">
+							<a data-toggle="modal" href="#exampleModal2" role="button">
+								<img src="assets/img/new-products/ол л-сп сандал 500мл.png" class="card-img-top" alt="product-3">
+							</a>
+							<div class="card-body noselect">
+								<h5 class="card-title">Напиток «Вторник»</h5>
+								<p class="card-number">Артикул: 00000</p>
+								<p class="card-text">краткое описание</p>
+							</div>
+							<div class="price-box noselect">
+								<span>ЦЕНА</span>
+								<button type="button" class="btn cart-btn">в корзину</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-6 col-2">
+						<div class="card mb-60">
+							<a data-toggle="modal" href="#exampleModal2" role="button">
+								<img src="assets/img/new-products/ол л-сп сандал спрей 50мл.png" class="card-img-top" alt="product-3">
+							</a>
+							<div class="card-body noselect">
+								<h5 class="card-title">Напиток «Вторник»</h5>
+								<p class="card-number">Артикул: 00000</p>
+								<p class="card-text">краткое описание</p>
+							</div>
+							<div class="price-box noselect">
+								<span>ЦЕНА</span>
+								<button type="button" class="btn cart-btn">в корзину</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-6 col-2">
+						<div class="card mb-60">
+							<a data-toggle="modal" href="#exampleModal2" role="button">
+								<img src="assets/img/new-products/ол л-сп чд 500мл.png" class="card-img-top" alt="product-3">
+							</a>
+							<div class="card-body noselect">
+								<h5 class="card-title">Напиток «Вторник»</h5>
+								<p class="card-number">Артикул: 00000</p>
+								<p class="card-text">краткое описание</p>
+							</div>
+							<div class="price-box noselect">
+								<span>ЦЕНА</span>
+								<button type="button" class="btn cart-btn">в корзину</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-6 col-2">
+						<div class="card mb-60">
+							<a data-toggle="modal" href="#exampleModal2" role="button">
+								<img src="assets/img/new-products/ол л-сп чд спрей 50мл.png" class="card-img-top" alt="product-3">
+							</a>
+							<div class="card-body noselect">
+								<h5 class="card-title">Напиток «Вторник»</h5>
 								<p class="card-number">Артикул: 00000</p>
 								<p class="card-text">краткое описание</p>
 							</div>
@@ -446,7 +614,7 @@
 	<footer class="footer mt-auto">
 		<div class="container-custom-footer">
 			<div class="row justify-content-center align-items-start">
-				<div class="col-lg-4">
+				<div class="col-lg-4 col-md-6 order-md-2 order-lg-1 col-1">
 					<div class="logo-footer noselect">
 						<a class="navbar-brand" href="index.html">
 			    			<img src="assets/img/logo/logo.png" class="d-inline-block align-top" alt="logo-footer">
@@ -455,18 +623,15 @@
 			  			<img src="assets/img/logo/logo-doc.png" alt="znak">
 					</div>
 				</div>
-				<div class="col-lg-4">
+				<div class="col-lg-4 col-md-12 order-md-1 order-lg-2 phone-footer col-2">
 					<div class="contacts">
 						<p class="noselect">наши контакты</p>
 						<a href="tel:+74956644955"><img src="assets/img/icons/tel-icon.png" alt="phone-icon">8(495)664-49-55</a>
 					</div>
-					<div class="copy noselect">
-						<p>2021&copy;семейная привлекательность</p>
-					</div>
 				</div>
-				<div class="col-lg-4">
-					<div class="social noselect">
-						<div class="social-box">
+				<div class="col-lg-4 col-md-6 order-md-3 order-lg-3 col-2">
+					<div class="social">
+						<div class="social-box noselect">
 							<div class="box-icons">
 								<a href="#"><img src="assets/img/icons/facebook-icon.png" alt="facebook-icon"></a>
 								<a href="#"><img src="assets/img/icons/whatsapp-icon.png" alt="whatsapp-icon"></a>
@@ -476,13 +641,18 @@
 						</div>
 					</div>
 				</div>
+				<div class="col-lg-12 order-lg-4 order-md-4">
+					<div class="copy noselect">
+						<p>2021&copy;семейная привлекательность</p>
+					</div>
+				</div>
 			</div>
 		</div>
 	</footer>
 
 	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered modal-xl">
-	    	<div class="modal-content">
+		<div class="modal-dialog modal-dialog-centered modal-xl modal-dialog-scrollable">
+	    	<div class="modal-content scrl-modal-cart-prod">
 	    	<ul class="nav nav-tabs d-none modal_first_cart" id="myTab" role="tablist">
                 <li class="nav-item">
                     <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
@@ -548,8 +718,8 @@
 	</div>
 
 	<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered modal-xl">
-	    	<div class="modal-content">
+		<div class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-xl">
+	    	<div class="modal-content scrl-modal-cart-prod">
 		    	<ul class="nav nav-tabs d-none about_product_modal_open" id="myTab2" role="tablist">
 	                <li class="nav-item">
 	                    <a class="nav-link active" id="about-prod-tab" data-toggle="tab" href="#about-prod" role="tab"
@@ -564,19 +734,48 @@
 	                <div class="tab-pane modal-bg fade show active" id="about-prod" role="tabpanel" aria-labelledby="about-prod-tab">
 			        	<div class="modal-body modal-bd">
 			        		<div class="row">
-			        			<div class="col-lg-6">
-			        				<div class="about-prod-block-img">
+			        			<div class="col-xl-6 col-lg-12">
+			        				<div class="about-prod-block-img text-center">
 			        					<img src="assets/img/products/about_product_modal_img.png" alt="product-name">
 			        				</div>
 			        			</div>
-			        			<div class="col-lg-6">
+			        			<div class="col-xl-6 col-lg-12">
 			        				<div class="about-prod-block noselect">
+
 			        					<h5 id="exampleModalLabel2">Лосьон-Спрей Доктора Плетнева Для Кожи И Волос Ночной С Ароматом Ванили</h5>
-			        					<p>Область применения</p>
-			        					<p>Восстанавливает целостность и тургор кожи, применяется для коррекции мелких морщин, увлажнения кожи. Восстанавливает защитные функции и естественный цвет кожи, тонизирует и освежает ее, придает ей бархатистость и привлекательность. Применяется для коррекции мимических морщин, устраняет сосудистую сетку, купероз, акне, угревую сыпь. Восстанавливает структуру волос, укрепляет волосяные фолликулы, предотвращает их выпадение, ускоряет их рост, придает волосам эластичность, шелковистость и блеск.</p>
+
+			        					<p>В зависимости от беспокоящей проблемы спрей можно наносить на разные части тела.</p>
+
+			        					<p>При нанесении на лицо:</p>
+
+			        					<ul style="margin-bottom: 15px">
+			        						<li>Восстанавливает целостность и тургор кожи;</li>
+			        						<li>Корректирует мелкие возрастные и мимические морщины;</li>
+			        						<li>Имеет увлажняющие, тонизирующие и освежающие свойства;</li>
+			        						<li>Восстанавливает защитные функции и естественный цвет кожи;</li>
+			        						<li>Устраняет сосудистую сетку, купероз, акне, угревую сыпь.</li>
+			        					</ul>
+
+			        					<p>При нанесении на волосы:</p>
+
+			        					<ul style="margin-bottom: 15px">
+			        						<li>Восстанавливает структуру волос;</li>
+			        						<li>Укрепляет волосяные фолликулы;</li>
+			        						<li>Предотвращает выпадение волос, ускоряет их рост;</li>
+			        						<li>Восстанавливает защитные функции и естественный цвет кожи;</li>
+			        						<li>Придает волосам эластичность, шелковистость и блеск.</li>
+			        					</ul>
+
 			        					<p>Способ применения</p>
-			        					<p>Наружно распылить лосьон на кожу и/или волосы в вечернее время 1 раз в сутки и оставить ее высыхать естественным способом. Подходит для любого типа кожи и волос.</p>
+
+			        					<p>Наружно распылить лосьон на кожу и/или волосы в вечернее время 1 раз в сутки и оставить ее высыхать естественным способом.</p>
+
+			        					<p>Легкая текстура спрея идеально ложится на кожу и волосы, мгновенно впитывается и дарит приятное ощущение свежести и комфорта.</p>
+
+			        					<p>Подходит для любого типа кожи и волос.</p>
+
 			        					<p>Состав:</p>
+
 			        					<ul>
 			        						<li>Экстракт листьев малины</li>
 			        						<li>Экстракт побегов черники</li>
@@ -584,6 +783,7 @@
 			        						<li>Вода дистиллированная</li>
 			        						<li>Натуральное эфирное масло ванили</li>
 			        					</ul>
+
 			        				</div>
 			        				<div class="size-price noselect">
 			        					<p>объем мл</p>
@@ -645,10 +845,10 @@
 	        			<div class="row align-items-center justify-content-center">
 	        				<div class="col-lg-11">
 	        					<div class="row align-items-start">
-	        						<div class="col-lg-8">
+	        						<div class="col-xl-8 col-lg-8 col-md-12">
 			        					<div class="info-product-box">
 			        						<div class="box-img-info">
-			        							<img src="assets/img/modal/modal-cart-product-1.png" alt="modal-cart-product-1">
+			        							<img src="assets/img/new-products/ол л-сп ваниль 500мл.png" alt="modal-cart-product-1">
 			        						</div>
 					        				<div class="info-box-product-card noselect">
 					        					<div class="header-info-product">
@@ -664,7 +864,7 @@
 					        				</div>
 			        					</div>
 		        					</div>
-				        			<div class="col-lg-2">
+				        			<div class="col-xl-2 col-lg-2 col-md-4">
 				        				<div class="counter-modal-box text-center noselect">
 					        				<p>Колличество</p>
 					        				<div class="number">
@@ -674,15 +874,20 @@
 											</div>
 										</div>
 				        			</div>
-				        			<div class="col-lg-2">
+				        			<div class="col-xl-2 col-lg-2 col-md-4">
 				        				<div class="end-price-box text-center noselect">
 					        				<p class="mb-15">Сумма</p>
 					        				<p class="modal-price">1000 руб</p>
 				        				</div>
 				        			</div>
+				        			<div class="delete-adaptive-btn col-xl-1 col-lg-1 col-md-4">
+					        			<button type="button" class="delete-btn-cart">
+					        				<img src="assets/img/icons/delete-icon.png" alt="delete-icon">
+					        			</button>
+			        				</div>
 	        					</div>
 	        				</div>
-			        		<div class="col-lg-1">
+			        		<div class="delete-adaptive-btn-first col-xl-1 col-lg-1 col-md-2">
 			        			<button type="button" class="delete-btn-cart">
 			        				<img src="assets/img/icons/delete-icon.png" alt="delete-icon">
 			        			</button>
