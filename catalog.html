@@ -851,7 +851,7 @@
 
 			function redrawCart(items) {
 				let block = $('#cart-modal')
-				let html = `<hr>`
+				let html = `Корзина пустая`
 				const currentCart = JSON.parse(localStorage.getItem('cart'))
 
 				if(currentCart && currentCart.length) {
@@ -957,7 +957,7 @@
 
 			function updatePrice(price) {
 				const currentCart = JSON.parse(localStorage.getItem('cart'))
-				const totalPrice = currentCart.length && currentCart.map(i => i.count).reduce((total, item) => total + item) * 1000
+				const totalPrice = currentCart?.length && currentCart.map(i => i.count).reduce((total, item) => total + item) * 1000
 
 				$('.price-count-p').text(`${price ? price : totalPrice} руб.`)
 			}
@@ -1060,7 +1060,7 @@
 
 			$.ajax({
 				type: 'POST',
-				url: 'https://email-form-pletnev.herokuapp.com/',
+				url: 'https://email-form-pletnev.herokuapp.com/form',
 				data,
 				success() {
 					console.log('sended')
@@ -1089,7 +1089,7 @@
 
 			$.ajax({
 				type: 'POST',
-				url: 'https://email-form-pletnev.herokuapp.com/',
+				url: 'https://email-form-pletnev.herokuapp.com/form',
 				data,
 				success() {
 					console.log('sended')
