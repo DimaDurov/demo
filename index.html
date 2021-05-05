@@ -2,32 +2,67 @@
 <html lang="ru">
 <head>
 	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta http-equiv="imagetoolbar" content="no">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>СЕМЕЙНАЯ ПРИВЛЕКАТЕЛЬНОСТЬ | ГЛАВНАЯ</title>
 	<link rel="stylesheet" type="text/css" href="assets/libs/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script src="assets/js/protectImg.js"></script>
+	<script>
+		(function () {
+		    "use strict";
+
+		    var el = document.createElement('div');
+		    el.style.cssText = 'pointer-events:auto';
+
+		    if (el.style.pointerEvents !== 'auto') {
+		        el = null;
+
+		        var _lock = function (evt) {
+		            evt = evt || window.event;
+		            var el = evt.target || evt.srcElement;
+		            if (el && /\slocked\s/.test(' ' + el.className + ' ')) {
+		                if (evt.stopPropagation) {
+		                    evt.preventDefault();
+		                    evt.stopPropagation();
+		                } else {
+		                    evt.returnValue = true;
+		                    evt.cancelBubble = true;
+		                }
+		            }
+		        };
+
+		        if (document.addEventListener) {
+		            document.addEventListener('mousedown', _lock, false);
+		            document.addEventListener('contextmenu', _lock, false);
+		        } else {
+		            document.attachEvent('onmousedown', _lock);
+		            document.attachEvent('oncontextmenu', _lock);
+		        }
+		    }
+		})();
+	</script>
 </head>
-<body>
+<body oncontextmenu="return(false);">
 	
 	<header class="header">
 		<div class="container-custom-header">
 			<nav class="navbar navbar-expand-xl navbar-dark">
 				<a class="navbar-brand noselect" href="index.html">
-	    			<img src="assets/img/logo/logo.png" class="d-inline-block align-top" alt="logo-header">
+	    			<img src="assets/img/logo/logo.png" class="d-inline-block align-top locked" alt="logo-header">
 	    			<span class="logo-word-one">семейная<br><span class="logo-word-two">привлекательность</span></span>
 	  			</a>
 	  			<div class="header-buttons-box">
-	  				<button type="button" class="cart-btn-header cart-adaptive" data-toggle="modal" data-target="#exampleModal">
-						<img src="assets/img/icons/cart-icon.png" alt="cart">
+	  				<button type="button" class="cart-btn-header cart-adaptive" data-bs-toggle="modal" data-bs-target="#modal3">
+						<img src="assets/img/icons/cart-icon.png" alt="cart" class="locked">
 					</button>
 	  				<button type="button" class="btn lang-btn lang-adaptive">eng</button>
-					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Переключатель навигации">
-			    		<span class="navbar-toggler-icon"></span>
-			  		</button>
+					<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      					<span class="navbar-toggler-icon"></span>
+    				</button>
 	  			</div>
-				<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-					<ul class="navbar-nav mr-auto noselect">
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mr-auto-mr noselect">
 						<li class="nav-item">
 							<a class="nav-link" href="index.html">главная</a>
 						</li>
@@ -38,11 +73,11 @@
 							<a class="nav-link" href="about_author.html">о нас</a>
 						</li>
 					</ul>
-					<button type="button" class="cart-btn-header" data-toggle="modal" data-target="#exampleModal">
-						<img src="assets/img/icons/cart-icon.png" alt="cart">
+					<button type="button" class="cart-btn-header" data-bs-toggle="modal" data-bs-target="#modal3">
+						<img src="assets/img/icons/cart-icon.png" alt="cart" class="locked">
 					</button>
 					<form class="form-inline search noselect">
-						<input class="form-control" type="search" placeholder="Я ИЩУ...">
+						<input class="search form-control" type="search" placeholder="Я ИЩУ...">
 						<button class="btn search-btn" type="submit">найти</button>
 					</form>
 					<button type="button" class="btn lang-btn">eng</button>
@@ -71,16 +106,16 @@
 		<section class="product-line">
 			<div class="container-custom">
 				<div class="title-section noselect">
-					<h2>Какой-то текст про то, что мы рады представить вам такие-то линейки?</h2>
+					<h2>НАШИ ЛИНИИ</h2>
 				</div>
-				<div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+				<div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
 					<div class="carousel-inner">
-				    	<div class="carousel-item active">
-				      		<div class="product-line-box product-line-bg-main">
-								<div class="row justify-content-center align-items-center">
+						<div class="carousel-item active">
+							<div class="product-line-box product-line-bg-main">
+								<div class="row justify-content-center align-items-start">
 									<div class="col-lg-6 col-md-12 col-3">
 										<div class="text-center line-img">
-											<img src="assets/img/banners/book.jpg" alt="book">
+											<img src="assets/img/books/books-big/book-1.png" alt="book" class="locked">
 										</div>
 									</div>
 									<div class="col-lg-6 col-md-12 col-3">
@@ -94,13 +129,13 @@
 									</div>
 								</div>
 							</div>
-				    	</div>
-				    	<div class="carousel-item">
-				      		<div class="product-line-box product-line-bg-main">
-								<div class="row justify-content-center align-items-center">
+						</div>
+						<div class="carousel-item">
+							<div class="product-line-box product-line-bg-main">
+								<div class="row justify-content-center align-items-start">
 									<div class="col-lg-6 col-md-12 col-3">
 										<div class="text-center line-img">
-											<img src="assets/img/logo/logo.png" alt="book">
+											<img src="assets/img/books/books-big/book-2.png" alt="book" class="locked">
 										</div>
 									</div>
 									<div class="col-lg-6 col-md-12 col-3">
@@ -114,13 +149,13 @@
 									</div>
 								</div>
 							</div>
-				    	</div>
-				    	<div class="carousel-item">
-				      		<div class="product-line-box product-line-bg-main">
-								<div class="row justify-content-center align-items-center">
+						</div>
+						<div class="carousel-item">
+							<div class="product-line-box product-line-bg-main">
+								<div class="row justify-content-center align-items-start">
 									<div class="col-lg-6 col-md-12 col-3">
 										<div class="text-center line-img">
-											<img src="assets/img/logo/logo-doc.png" alt="book">
+											<img src="assets/img/books/books-big/book-3.png" alt="book" class="locked">
 										</div>
 									</div>
 									<div class="col-lg-6 col-md-12 col-3">
@@ -134,16 +169,16 @@
 									</div>
 								</div>
 							</div>
-				    	</div>
+						</div>
 					</div>
-					<a class="carousel-control-prev noselect" href="#carouselExampleFade" role="button" data-slide="prev">
+					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"  data-bs-slide="prev">
 						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-				    	<span class="sr-only">Предыдущий</span>
-					</a>
-					<a class="carousel-control-next noselect" href="#carouselExampleFade" role="button" data-slide="next">
-				    	<span class="carousel-control-next-icon" aria-hidden="true"></span>
-				    	<span class="sr-only">Следующий</span>
-					</a>
+						<span class="visually-hidden">Предыдущий</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade"  data-bs-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="visually-hidden">Следующий</span>
+					</button>
 				</div>
 			</div>
 		</section>
@@ -156,37 +191,37 @@
 				<div class="row justify-content-center align-items-start">
 					<div class="col-lg-4 mb-30 col-md-6 col-2">
 						<div class="card noselect">
-							<a data-toggle="modal" href="#exampleModal2" role="button">
-								<img src="assets/img/products/product-1.png" class="card-img-top" alt="product-1">
-							</a>
+							
+								<img src="assets/img/product/catalog-page-products/prod-1.png" class="card-img-top locked" alt="product-1">
+							
 							<div class="card-body">
 								<p class="card-text">вторая омолаживающая линия</p>
-								<h5 class="card-title">лосьон-спрей с ароматом найоли</h5>
+								<h5 class="card-title">лосьон-спрей с ароматом ванили</h5>
 							</div>
 						</div>
 					</div>
 					<div class="col-lg-4 mb-30 col-md-6 col-2">
 						<div class="card noselect">
-							<a data-toggle="modal" href="#exampleModal2" role="button">
-								<img src="assets/img/products/product-2.png" class="card-img-top" alt="product-1">
-							</a>
+							
+								<img src="assets/img/product/catalog-page-products/prod-42.png" class="card-img-top locked" alt="product-1">
+							
 							<div class="card-body">
-								<p class="card-text">омолаживающая линия</p>
-								<h5 class="card-title">Лосьон-спрей с ароматом жасмина</h5>
+								<p class="card-text">элитная омолаживающая линия</p>
+								<h5 class="card-title">лосьон-спрей №1</h5>
 							</div>
 						</div>
-					</div>	
+					</div>
 					<div class="col-lg-4 mb-30 col-md-6 col-2">
 						<div class="card noselect">
-							<a data-toggle="modal" href="#exampleModal2" role="button">
-								<img src="assets/img/products/product-3.png" class="card-img-top" alt="product-1">
-							</a>
+							
+								<img src="assets/img/product/catalog-page-products/prod-13.png" class="card-img-top locked" alt="product-1">
+							
 							<div class="card-body">
-								<p class="card-text">вторая омолаживающая линия</p>
-								<h5 class="card-title">лосьон-спрей с ароматом розмарина</h5>
+								<p class="card-text">омолаживающая линия</p>
+								<h5 class="card-title">Лосьон-спрей с ароматом розы</h5>
 							</div>
 						</div>
-					</div>			
+					</div>				
 				</div>
 			</div>
 		</section>
@@ -199,64 +234,67 @@
 				<div class="row justify-content-center align-items-start">
 					<div class="col-lg-4 mb-30 col-md-6 col-2">
 						<div class="card noselect">
-							<a data-toggle="modal" href="#exampleModal2" role="button">
-								<img src="assets/img/products/product-2.png" class="card-img-top" alt="product-1">
-							</a>
+							
+								<img src="assets/img/product/catalog-page-products/prod-21.png" class="card-img-top locked" alt="product-1">
+							
 							<div class="card-body">
-								<h5 class="card-title">Лосьон-спрей с ароматом жасмина</h5>
+								<p class="card-text">напитки доктора плетнева</p>
+								<h5 class="card-title">Напиток «Понедельник»</h5>
 							</div>
 						</div>
 					</div>
 					<div class="col-lg-4 mb-30 col-md-6 col-2">
 						<div class="card noselect">
-							<a data-toggle="modal" href="#exampleModal2" role="button">
-								<img src="assets/img/products/product-1.png" class="card-img-top" alt="product-1">
-							</a>
-							<div class="card-body">
-								<h5 class="card-title">Напиток «Вторник»</h5>
-							</div>
-						</div>
-					</div>	
-					<div class="col-lg-4 mb-30 col-md-6 col-2">
-						<div class="card noselect">
-							<a data-toggle="modal" href="#exampleModal2" role="button">
-								<img src="assets/img/products/product-3.png" class="card-img-top" alt="product-1">
-							</a>
-							<div class="card-body">
-								<h5 class="card-title">Лосьон-спрей с ароматом жасмина</h5>
-							</div>
-						</div>
-					</div>	
-					<div class="col-lg-4 mb-30 col-md-6 col-2">
-						<div class="card noselect">
-							<a data-toggle="modal" href="#exampleModal2" role="button">
-								<img src="assets/img/products/product-2.png" class="card-img-top" alt="product-1">
-							</a>
-							<div class="card-body">
-								<p class="card-text">омолаживающая линия</p>
-								<h5 class="card-title">Лосьон-спрей с ароматом жасмина</h5>
-							</div>
-						</div>
-					</div>	
-					<div class="col-lg-4 mb-30 col-md-6 col-2">
-						<div class="card noselect">
-							<a data-toggle="modal" href="#exampleModal2" role="button">
-								<img src="assets/img/products/product-1.png" class="card-img-top" alt="product-1">
-							</a>
+							
+								<img src="assets/img/product/catalog-page-products/prod-20.png" class="card-img-top locked" alt="product-1">
+							
 							<div class="card-body">
 								<p class="card-text">напитки доктора плетнева</p>
 								<h5 class="card-title">Напиток «Вторник»</h5>
 							</div>
 						</div>
+					</div>	
+					<div class="col-lg-4 mb-30 col-md-6 col-2">
+						<div class="card noselect">
+							
+								<img src="assets/img/product/catalog-page-products/prod-23.png" class="card-img-top locked" alt="product-1">
+							
+							<div class="card-body">
+								<p class="card-text">напитки доктора плетнева</p>
+								<h5 class="card-title">Напиток «Среда»</h5>
+							</div>
+						</div>
+					</div>	
+					<div class="col-lg-4 mb-30 col-md-6 col-2">
+						<div class="card noselect">
+							
+								<img src="assets/img/product/catalog-page-products/prod-25.png" class="card-img-top locked" alt="product-1">
+							
+							<div class="card-body">
+								<p class="card-text">напитки доктора плетнева</p>
+								<h5 class="card-title">Напиток «Четверг»</h5>
+							</div>
+						</div>
+					</div>	
+					<div class="col-lg-4 mb-30 col-md-6 col-2">
+						<div class="card noselect">
+							
+								<img src="assets/img/product/catalog-page-products/prod-22.png" class="card-img-top locked" alt="product-1">
+							
+							<div class="card-body">
+								<p class="card-text">напитки доктора плетнева</p>
+								<h5 class="card-title">Напиток «Пятница»</h5>
+							</div>
+						</div>
 					</div>
 					<div class="col-lg-4 mb-30 col-md-6 col-2">
 						<div class="card noselect">
-							<a data-toggle="modal" href="#exampleModal2" role="button">
-								<img src="assets/img/products/product-3.png" class="card-img-top" alt="product-1">
-							</a>
+							
+								<img src="assets/img/product/catalog-page-products/prod-24.png" class="card-img-top locked" alt="product-1">
+							
 							<div class="card-body">
-								<p class="card-text">омолаживающая линия</p>
-								<h5 class="card-title">Лосьон-спрей с ароматом жасмина</h5>
+								<p class="card-text">напитки доктора плетнева</p>
+								<h5 class="card-title">Напиток «Суббота»</h5>
 							</div>
 						</div>
 					</div>		
@@ -268,16 +306,19 @@
 			<div class="container-custom noselect">
 				<h3>с удовольствием проконсультируем вас по всем вопросам</h3>
 				<p>Мы гордимся тем, что мы разрабатываем свои продукты в своей же лаборатории. И производим свои продукты на своем же производстве. Тем самым полностью контролируем качество: проводим входной контроль сырья, а также лабораторные исследования готовой продукции - органолептические, физико-химические и микробиологические. Разрабатывая новые натуральные косметические продукты, мы ориентируемся на мир, где конкуренция в качественном товаре выше. Мы хотим доказать, что российская натуральная косметика может быть качественной и эффективной.</p>
-				<form class="subscribe-form">
-					<div class="form-row justify-content-center align-items-center">
+				<form class="subscribe-form" id="form">
+					<div class="row justify-content-center align-items-center">
+						<input type="hidden" name="project_name" value="Семейная Привлекательность">
+	                    <input type="hidden" name="admin_email" value="mailpletnev@gmail.com">
+	                    <input type="hidden" name="form_subject" value="Client">
 						<div class="col-lg-4 subscribe-mb-20 col-md-12 col-2">
-							<input type="text" name="name" placeholder="Ваше имя..." required="required" class="form-control">
+							<input type="text" name="Имя" placeholder="Ваше имя..." required="required" class="form-control">
 						</div>
 						<div class="col-lg-4 subscribe-mb-20 col-md-12 col-2">
-							<input type="tel" name="phone" placeholder="Ваш номер телефона..." required="required" class="form-control">
+							<input type="tel" name="Телефон" placeholder="Ваш номер телефона..." required="required" class="form-control">
 						</div>
 						<div class="col-lg-3 col-md-12 col-2">
-							<button class="btn sub-btn" type="button">отправить</button>
+							<button class="btn sub-btn" type="submit" name="submit">отправить</button>
 						</div>
 					</div>
 				</form>
@@ -292,25 +333,28 @@
 				<div class="col-lg-4 col-md-6 order-md-2 order-lg-1 col-1">
 					<div class="logo-footer noselect">
 						<a class="navbar-brand" href="index.html">
-			    			<img src="assets/img/logo/logo.png" class="d-inline-block align-top" alt="logo-footer">
+			    			<img src="assets/img/logo/logo.png" class="d-inline-block align-top locked" alt="logo-footer">
 			    			<span class="logo-word-one">семейная<br><span class="logo-word-two">привлекательность</span></span>
 			  			</a>
-			  			<img src="assets/img/logo/logo-doc.png" alt="znak">
+			  			<img src="assets/img/logo/logo-doc.png" alt="znak" class="znak-plet locked">
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-12 order-md-1 order-lg-2 phone-footer col-1">
 					<div class="contacts">
 						<p class="noselect">наши контакты</p>
-						<a href="tel:+74956644955"><img src="assets/img/icons/tel-icon.png" alt="phone-icon">8(495)664-49-55</a>
+						<img src="assets/img/icons/tel-icon.png" alt="phone-icon" class="footer-phone-icon locked">
+						<a href="tel:+74956644955">8(495)664-49-55</a>
+						<img src="assets/img/icons/email-icon.png" alt="email-icon" class="email-icon-footer locked">
+						<p class="footer-text-email">pletnev.beauty@gmail.com</p>
 					</div>
 				</div>
 				<div class="col-lg-4 col-md-6 order-md-3 order-lg-3 col-1">
 					<div class="social">
 						<div class="social-box noselect">
 							<div class="box-icons">
-								<a href="#"><img src="assets/img/icons/facebook-icon.png" alt="facebook-icon"></a>
-								<a href="#"><img src="assets/img/icons/whatsapp-icon.png" alt="whatsapp-icon"></a>
-								<a href="#"><img src="assets/img/icons/inst-icon.png" alt="instagram-icon"></a>
+								<a href="#"><img src="assets/img/icons/facebook-icon.png" alt="facebook-icon" class="locked"></a>
+								<a href="#"><img src="assets/img/icons/whatsapp-icon.png" alt="whatsapp-icon" class="locked"></a>
+								<a href="#"><img src="assets/img/icons/inst-icon.png" alt="instagram-icon" class="locked"></a>
 							</div>
 							<p>ИП Шкалин Сергей Николаевич<br>Москва, ул. Новослободская,<br>д. 57/65</p>
 						</div>
@@ -325,119 +369,9 @@
 		</div>
 	</footer>
 
-	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-		<div class="modal-dialog modal-dialog-centered modal-xl modal-dialog-scrollable">
-	    	<div class="modal-content scrl-modal-cart-prod">
-	    	<ul class="nav nav-tabs d-none modal_first_cart" id="myTab" role="tablist">
-                <li class="nav-item">
-                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
-                           aria-controls="home" aria-selected="true"></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
-                           aria-controls="contact" aria-selected="false"></a>
-                </li>
-            </ul>
-            <div class="tab-content" id="myTabContent">
-                <div class="tab-pane modal-bg fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-			        <div class="modal-header noselect">
-	        			<h5 class="modal-title" id="exampleModalLabel">корзина заказов</h5>
-	      			</div>
-
-	      			<div class="modal-body" id="cart-modal"></div>
-
-					<div class="modal-footer noselect">
-						<div class="footer-box-modal-text mr-15">
-							<p class="price-count-name">к оплате:</p>
-							<button type="button" class="btn close-btn-modal" data-dismiss="modal">продолжить покупки</button>
-						</div>	
-						<div class="footer-box-modal-text">
-							<p class="price-count-p"></p>
-							<button type="button" class="btn btnNext">оформить заказ</button>
-						</div>
-					</div>
-                </div>
-                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-                        <div class="modal-header noselect">
-	        				<h5 class="modal-title">Оформление заказа</h5>
-	      				</div>
-                    	<div class="modal-body modal-form-two">
-                    		<form>
-                    			<div class="form-row">
-                    				<div class="col-lg-6 mb-15">
-                    					<input type="text" name="name" placeholder="Ваше имя..." required="required" class="form-control">
-                    				</div>
-                    				<div class="col-lg-6 mb-15">
-                    					<input type="tel" name="phone" placeholder="Ваш телефон..." required="required" class="form-control">
-                    				</div>
-                    				<div class="col-lg-6 mb-15">
-                    					<input type="email" name="mail" placeholder="Ваш email..." required="required" class="form-control">
-                    				</div>
-                    				<div class="col-lg-6 mb-15">
-                    					<input type="text" name="city" placeholder="Введите город и область..." required="required" class="form-control">
-                    				</div>
-                    				<div class="col-lg-12">
-                    					<input type="text" name="adress" placeholder="Введите ваш адрес..." required="required" class="form-control">
-                    				</div>
-                    			</div>
-                    		</form>
-                    	</div>
-                        <div class="modal-footer noselect">
-					        <button type="button" class="btn back-btn btnPrevious mr-15">назад</button>
-					        <button type="button" class="btn send-btn">отправить</button>
-	      				</div>
-                	</div>
-            	</div>
-	    	</div>
-	  	</div>
-	</div>
-
 	<script src="assets/libs/jquery/jquery-3.5.1.min.js"></script>
-	<script src="assets/libs/bootstrap/js/bootstrap.min.js"></script>
-	<script>
-		$(document).ready(function() {
-			$('.minus').click(function () {
-				var $input = $(this).parent().find('input');
-				var count = parseInt($input.val()) - 1;
-				count = count < 1 ? 1 : count;
-				$input.val(count);
-				$input.change();
-				return false;
-			});
-			$('.plus').click(function () {
-				var $input = $(this).parent().find('input');
-				$input.val(parseInt($input.val()) + 1);
-				$input.change();
-				return false;
-			});
-		});
-	</script>
-	<script>
-		$('.btnNext').click(function() {
-			$('.modal_first_cart .active').parent().next('li').find('a').trigger('click');
-		});
-		$('.btnPrevious').click(function() {
-			$('.modal_first_cart .active').parent().prev('li').find('a').trigger('click');
-		});
-	</script>
-	<script>
-		$('.next-btn-about').click(function() {
-			$('.about_product_modal_open .active').parent().next('li').find('a').trigger('click');
-		});
-		$('.back-btn-about').click(function() {
-			$('.about_product_modal_open .active').parent().prev('li').find('a').trigger('click');
-		});
-	</script>
-	<script>
-		function disablecontext(e) {
-			var clickedEl = (e==null) ? event.srcElement.tagName : e.target.tagName;
-			if (clickedEl == "IMG") {
-				alert(errorMsg);
-				return false;
-			}
-		}
-		var errorMsg = "Вы не можете сохранять изображения с этого сайта.";
-		document.oncontextmenu = disablecontext;
-	</script>
+	<script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9.14.4/dist/sweetalert2.all.min.js"></script>
+	<script src="js/mainfile.js"></script>
 </body>
 </html>
